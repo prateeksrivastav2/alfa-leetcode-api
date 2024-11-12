@@ -12,7 +12,7 @@ const problemsFetch = async (req, res, formatData, query) => {
       variables: {
         categorySlug: "",
         skip: 0,
-        limit: limit ? limit : 40, //by default get 20 question
+        limit:  40, //by default get 20 question
         filters: { tags: tags ? tags.split(" ") : " " }, //filter by tags
       },
     }),
